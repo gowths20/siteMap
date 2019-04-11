@@ -1,0 +1,155 @@
+html {
+  scroll-behavior: smooth;
+}
+.heading
+{
+  font-size: 25px;
+  color: #2c2f42;
+  opacity: .8;
+}
+h4,.alphabets
+{
+  border-bottom:1px dashed #2c2f42;
+  padding-bottom: 2em;
+}
+.Sitemap
+{
+  display: flex;
+  flex-direction: column;
+    width: 1024px;
+    margin: 0 auto;
+}
+section.destination
+{
+  display: block;
+  width: 100%;
+}
+section ul
+{
+  width: 100%;
+  display: inline-block;
+  list-style: none;
+}
+section.destination ul li
+{
+  width: 20%;
+  float: left;
+  padding: 0.5em 0;
+}
+section.vacation ul li
+{
+  width: 20%;
+  float: left;
+  padding: 0.5em 0;
+}
+section.pageNavigation ul li
+{
+  float: left;
+  padding: 0.5em;
+}
+section.itenaries ul li
+{
+  width: 40%;
+  float: left;
+  padding: 0.5em 0;
+}
+section ul li a
+{
+  text-decoration: none;
+  color: #2c2f42;
+  opacity: .8;
+}
+section ul li a:hover
+{
+  color: #1cad45;
+}
+    
+.generateItenaries
+{
+	width:100%;
+	display:inline-block;
+}
+.generateItenaries .itenaries_alphabets_list
+{
+	width:10%;
+	float:left;
+}
+.generateItenaries .alpha_list
+{
+  width: 90%;
+	float:left;
+}
+ul
+{
+  padding: 0;
+}
+
+.pageFixed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1111;
+  background: #fff;
+}
+
+.pageFixed ul{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  .Sitemap
+  {
+    width:100%;
+    padding: 5px 0px;
+  }
+}
+
+@media (min-width:992px) and (max-width: 1024px) {
+  .Sitemap {
+    width: 90%;
+    padding: 0 0.5em;
+}
+section.destination ul li {
+  width: 25%;
+  float: left;
+  padding: 0.5em 0;
+}
+}
+@media (min-width:768px) and (max-width: 991px) {
+   
+}
+@media (min-width:320px) and (max-width: 767px) {
+  .Sitemap {
+    width: 90%;
+    padding: 0 0.5em;
+}
+  section.destination ul li {
+      width: 40%;
+      text-align: center;
+  }
+  section.vacation ul li
+  {
+    width: 100%;
+  }
+  .generateItenaries .itenaries_alphabets_list
+  {
+    width:100%;
+    border-bottom:1px dashed #2c2f42;
+    border-top:1px dashed #2c2f42;
+    padding: 0.5em 0;
+    text-align: center;
+  }
+    .generateItenaries .alpha_list
+  {
+    width:100%;
+  }
+  section.itenaries ul li {
+    width: 100%;
+    padding: 0.5em 0;
+ }
+ 
+}

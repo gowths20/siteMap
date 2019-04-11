@@ -90,8 +90,9 @@ class App extends Component {
          <section className = "itenaries">
            
             {this.alphabets.map(function(item,index) {
-               return (<div  key= {index+"_"} id={item+"_"+index} className="generateItenaries">
-                 <div key= {index+"_"} className="itenaries_alphabets_list"><b key= {index+"_"}>{item}</b></div>
+               return (<div key= {index+"_"} className="scroll"><span id={item+"_"+index}></span> <div   className="generateItenaries">
+                
+                 <div className="itenaries_alphabets_list"><b key= {index+"_"}>{item}</b></div>
                  <div className="alpha_list"><ul>
                  {model.itineraries.map(function(item1,index1)
                 {
@@ -99,7 +100,9 @@ class App extends Component {
                 })}
                  </ul>
                  </div> 
-                </div>)
+                </div>
+                </div>
+                )
                },this)} 
          </section>
       </div>

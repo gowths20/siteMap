@@ -95,7 +95,7 @@ class App extends Component {
                  <div className="alpha_list"><ul>
                  {model.itineraries.map(function(item1,index1)
                 {
-                  return item1.text.charAt(0) === item ? <li key= {index1}><a target="_blank" rel="noopener noreferrer" href={item1.url}>{item1.text}</a></li>:(!isNaN(parseInt(item1.text.charAt(0))) && item === '0-9') ?  <li key= {index1}><a href={item1.url}>{item1.text}</a></li> : null
+                  return item1.text.charAt(0) === item ? <li key= {index1}><a target="_blank" rel="noopener noreferrer" href={item1.url}>{item1.text}</a></li>:(!isNaN(parseInt(item1.text.charAt(0))) && item === '0-9') ?  <li key= {index1}><a  target="_blank" rel="noopener noreferrer" href={item1.url}>{item1.text}</a></li> : null
                 })}
                  </ul>
                  </div> 
